@@ -1,0 +1,140 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 10px;
+    background: linear-gradient(180deg, #48bfff, #d7d3fb);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Form styling */
+#player-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 300px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#player-form input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#start-game-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+#start-game-button:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Game container and board styling */
+.hidden {
+    display: none;
+}
+
+.board {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 13px;
+    margin: 10px auto;
+    padding: 10px;
+    /* background: #f5f5f5; */
+    border-radius: 10px;
+    /* box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.2s ease-in-out;
+    /* box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.cell:hover {
+    background: #ffffff;
+    transform: scale(1.05);
+}
+
+.cell.taken {
+    cursor: not-allowed;
+}
+
+.cell.winning {
+    background: #a0f0a0 !important;
+    color: white;
+    font-weight: bold;
+}
+
+#restart-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#restart-button:hover {
+    background: #0056b3;
+}
+
+
+
+
+
+
+
+
+.game-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#scoreboard {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#scoreboard span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#player-x-score {
+  color: #007bff; /* Blue color for Player X */
+}
+
+#player-o-score {
+  color: #ff9900; /* Orange color for Player O */
+}
