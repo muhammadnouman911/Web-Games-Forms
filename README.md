@@ -55,5 +55,3 @@ This project is open-source and available for modification and learning purposes
 
 ---
 
-### About **Web-Games-Forms** 🏆
-This repository is a **practice project** for developing **interactive web-based applications**. It includes **simple games and functional forms** that help in learning **frontend and backend development**. The goal is to enhance skills in **web technologies** through hands-on projects.
