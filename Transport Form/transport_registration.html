@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="process_registration.php" method="POST">
+        <h2>Transport Registration</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="reg_no">Registration Number:</label>
+        <input type="text" id="reg_no" name="reg_no" required>
+
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" required>
+
+        <label for="semester">Semester:</label>
+        <input type="number" id="semester" name="semester" min="1" max="8" required>
+
+        <label for="area">Area:</label>
+        <input type="text" id="area" name="area" required>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
